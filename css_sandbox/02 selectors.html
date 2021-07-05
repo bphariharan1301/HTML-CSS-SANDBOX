@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Body Styling*/
+        body{
+            background-color: #333;
+        }
+        #primary-heading{
+            color: green;
+        } /* U can use h2#green-heading to target
+        an id */
+        /* To target a class */
+        .blue-heading{
+            color: white;
+        }
+        /* U can also use this h3.blue-heading to target that perticular 
+        tag or class */
+        #para-1{
+            color: red;
+        }
+        #para-2{
+            color: white;
+        }
+        #welcome{
+            background-color: white;
+        }
+        /* Multiple Selectors */
+        #welcome, #about{
+            border: 10px solid white;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        /* Nested Selectors*/
+        #welcome p{
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 id="primary-heading">Welcome</h2>
+        <p id="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci amet pariatur necessitatibus quibusdam ab possimus ea harum fuga odit veritatis.</p>
+    </div>
+    <div id="about">
+        <h2 class="blue-heading">About</h2>
+        <p id="para-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo a laudantium corrupti! Minus iste veritatis possimus rem. Praesentium, tenetur voluptatem.</p>
+    </div>
+</body>
+</html>
